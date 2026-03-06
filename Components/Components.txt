@@ -1,0 +1,9 @@
+🧰 Components Used
+| Component                 | Quantity |
+| ------------------------- | -------- |
+| Arduino Uno / Nano        | 1        |
+| HC-SR04 Ultrasonic Sensor | 1        |
+| 16x2 LCD with I2C module  | 1        |
+| Buzzer                    | 1        |
+| Breadboard                | 1        |
+| Jumper Wires              | Several  |
