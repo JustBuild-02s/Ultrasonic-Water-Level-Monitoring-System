@@ -10,26 +10,30 @@ A simple Arduino-based water level monitoring system that measures the distance 
 ⚡ Faster beeping as tank approaches full level
 🚨 Continuous buzzer when tank is full
 
-⚙️ How It Works
+⚙️ Working Principle
 
-1️⃣ The ultrasonic sensor measures the distance between the sensor and the water surface.
+1️⃣ The HC-SR04 ultrasonic sensor sends ultrasonic waves toward the water surface.
 
-2️⃣ The tank height is predefined in the code (in this project 6 cm).
+2️⃣ The sensor measures the time taken for the echo to return.
 
-3️⃣ Water level is calculated using:
+3️⃣ Distance is calculated using:
+Distance = (Time × Speed of Sound) / 2
 
+4️⃣ Water level is calculated using:
 Water Level = Tank Height − Measured Distance
 
-4️⃣ The LCD displays:
+5️⃣ The LCD displays the distance and water level in real time.
 
-Distance from sensor
+6️⃣ Buzzer alerts:
 
-Current water level
+🔔 Half tank → 3 beeps
 
-5️⃣ Buzzer alerts:
+⚡ Near full → faster beeps
 
-🔔 3 beeps at half tank level
+🚨 Full tank → continuous beep
 
-⚡ Faster beeps as water level increases
+## 🎥 Project Demo
 
-🚨 Continuous beep when tank is full
+Click the image below to watch the project video.
+
+[![Watch the Demo](https://img.shields.io/badge/Watch-Project%20Video-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/posts/activity-7403021258071740416-1NJh)
